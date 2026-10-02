@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Marketplace de Subastas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Subastas de Vehículos</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="registrer.html">Registro</a>
+    <a href="publicar.html">Publicar</a>
+    <button class="btn-logout" onclick="logout()">Cerrar sesión</button>
+  </nav>
+</header>
+
+
+<div class="container">
+  <h2>Inventario en Subasta</h2>
+
+  <div class="form-group">
+    <label>Filtros</label>
+    <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+      <input id="filtroMarca" placeholder="Marca">
+      <input id="filtroModelo" placeholder="Modelo">
+      <select id="filtroDano">
+        <option value="">Daño</option>
+        <option value="Verde">Verde</option>
+        <option value="Amarillo">Amarillo</option>
+        <option value="Rojo">Rojo</option>
+      </select>
+      <button class="btn btn-outline" onclick="buscarVehiculos()">Filtrar</button>
+    </div>
+  </div>
+
+  <div id="gridVehiculos" class="card-grid"></div>
+</div>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

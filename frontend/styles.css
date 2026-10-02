@@ -1,0 +1,175 @@
+/* ====== ESTILO GENERAL ====== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f4f7;
+  color: #222;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+header nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ====== CARDS DE VEHÍCULOS ====== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  margin: .3rem 0;
+}
+
+/* ====== BADGES ====== */
+.badge-dano {
+  display: inline-block;
+  padding: .3rem .7rem;
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.badge-dano.verde { background: #c8e6c9; color: #2e7d32; }
+.badge-dano.amarillo { background: #fff9c4; color: #f9a825; }
+.badge-dano.rojo { background: #ffcdd2; color: #c62828; }
+
+/* ====== BOTONES ====== */
+.btn {
+  display: inline-block;
+  padding: .6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.btn-primary {
+  background: #003366;
+  color: white;
+}
+
+.btn-outline {
+  background: white;
+  color: #003366;
+  border: 2px solid #003366;
+}
+
+/* ====== FORMULARIOS ====== */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: .85rem;
+  margin-bottom: .3rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: .6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* ====== DETALLE ====== */
+.detalle-fotos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.detalle-fotos img {
+  width: 260px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.subasta-panel {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-top: 1rem;
+}
+
+.badge-estado {
+  display: inline-block;
+  padding: .3rem .8rem;
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.badge-estado.ganando { background: #c8e6c9; color: #2e7d32; }
+.badge-estado.superado { background: #ffcdd2; color: #c62828; }
+
+.btn-logout {
+  background: #c62828;
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.btn-logout:hover {
+  background: #b71c1c;
+}

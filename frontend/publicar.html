@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Publicar Vehículo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Subastas de Vehículos</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="registrer.html">Registro</a>
+    <a href="publicar.html">Publicar</a>
+    <button class="btn-logout" onclick="logout()">Cerrar sesión</button>
+  </nav>
+</header>
+
+
+<div class="container">
+  <h2>Ficha técnica</h2>
+
+  <div class="form-group"><label>Año</label><input id="pubAnio"></div>
+  <div class="form-group"><label>Tipo de artículo</label><input id="pubTipo"></div>
+  <div class="form-group"><label>Marca</label><input id="pubMarca"></div>
+  <div class="form-group"><label>Modelo</label><input id="pubModelo"></div>
+  <div class="form-group"><label>Motor</label><input id="pubMotor"></div>
+  <div class="form-group"><label>Transmisión</label><input id="pubTransmision"></div>
+  <div class="form-group"><label>Combustible</label><input id="pubCombustible"></div>
+  <div class="form-group"><label>Tren de manejo</label><input id="pubTren"></div>
+  <div class="form-group"><label>Cilindros</label><input id="pubCilindros"></div>
+  <div class="form-group"><label>Daño</label><input id="pubDano"></div>
+  <div class="form-group"><label>Precio base</label><input id="pubPrecio"></div>
+  <div class="form-group"><label>Fecha inicio</label><input id="pubInicio" type="datetime-local"></div>
+  <div class="form-group"><label>Fecha fin</label><input id="pubFin" type="datetime-local"></div>
+
+  <div class="form-group">
+    <label>Fotos (mínimo 5)</label>
+    <input id="pubFotos" type="file" multiple>
+  </div>
+
+  <button class="btn btn-primary" onclick="publicarVehiculo()">Publicar</button>
+
+  <p id="pubMsg"></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

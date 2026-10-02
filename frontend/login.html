@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Subastas de Vehículos</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="registrer.html">Registro</a>
+    <a href="publicar.html">Publicar</a>
+    <button class="btn-logout" onclick="logout()">Cerrar sesión</button>
+  </nav>
+</header>
+
+
+<div class="container">
+  <h2>Iniciar sesión</h2>
+
+  <div class="form-group">
+    <label>Correo</label>
+    <input id="loginCorreo" type="email">
+  </div>
+
+  <div class="form-group">
+    <label>Contraseña</label>
+    <input id="loginPassword" type="password">
+  </div>
+
+  <button class="btn btn-primary" onclick="login()">Entrar</button>
+
+  <p id="loginMsg"></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
